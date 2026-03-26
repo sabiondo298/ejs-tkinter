@@ -3,15 +3,12 @@ import tkinter as tk
 root = tk.Tk()
 root.geometry("600x670")
 
-# Crear canvas
 canvas = tk.Canvas(root, width=600, height=670)
 canvas.pack()
 
-# Cargar imagen de la cancha
 field_image = tk.PhotoImage(file="imagenes/canchita.png")
 canvas.create_image(300, 335, image=field_image)
 
-# Cargar imágenes de jugadores
 player_images = {}
 for i in range(1, 12):
     player_images[i] = tk.PhotoImage(file=f"imagenes/jugador{i}.png")
@@ -31,12 +28,10 @@ positions = {
     11: (450, 100)  
 }
 
-# Crear imágenes de jugadores en posiciones
 player_ids = {}
 for player, pos in positions.items():
     player_ids[player] = canvas.create_image(pos[0], pos[1], image=player_images[player])
 
-# Variable para selección
 selected_player = None
 
 def on_click(event):
