@@ -6,12 +6,12 @@ root.geometry("600x670")
 canvas = tk.Canvas(root, width=600, height=670)
 canvas.pack()
 
-field_image = tk.PhotoImage(file="imagenes/canchita.png")
+field_image = tk.PhotoImage(file="equipo futbol/imagenes/canchita.png")
 canvas.create_image(300, 335, image=field_image)
 
 player_images = {}
 for i in range(1, 12):
-    player_images[i] = tk.PhotoImage(file=f"imagenes/jugador{i}.png")
+    player_images[i] = tk.PhotoImage(file=f"equipo futbol/imagenes/jugador{i}.png")
 
 
 positions = {
