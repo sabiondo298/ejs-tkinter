@@ -4,7 +4,7 @@ from tkinter import ttk
 
 root = tk.Tk()
 root.title("Calculadora")
-root.geometry("300x500")
+root.geometry("500x700")
 
 pantalla = tk.StringVar()
 entry = ttk.Entry(root, textvariable=pantalla, font=("Arial", 20))
@@ -63,3 +63,4 @@ ttk.Button(frame, text="^", command=lambda: presionar("**")).grid(row=4, column=
 ttk.Button(frame, text="√", command=raiz).grid(row=4, column=1)
 command=lambda: presionar("7")
 root.mainloop()
+
