@@ -1,0 +1,30 @@
+[
+    {
+        "codigo": "1",
+        "descripcion": "banana",
+        "precio": 1000.0,
+        "categoria": "comida",
+        "cantidad": 10
+    },
+    {
+        "codigo": "2",
+        "descripcion": "milanesa",
+        "precio": 5000.0,
+        "categoria": "comida",
+        "cantidad": 200
+    },
+    {
+        "codigo": "3",
+        "descripcion": "escritorio",
+        "precio": 3000.0,
+        "categoria": "mueble",
+        "cantidad": 20
+    },
+    {
+        "codigo": "4",
+        "descripcion": "vino",
+        "precio": 400.0,
+        "categoria": "bebida",
+        "cantidad": 55
+    }
+]
